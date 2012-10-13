@@ -16,11 +16,18 @@ end
   fake_pass="user#{num}pass"
   User.create( :name => fake_str,:email => fake_email,:password => fake_pass)
 end
+
+(1..5).each do |num|
+   Topic.create(:course_id=>num, :name=>"topic#{num}")
+end
+
+
 (1..5).each do |num|
   if num - 1 >= 0
-   Discussion.create(:user_id=>current_user.id, :statement=>"statement#{num}", :replyto=>${num-1})
+   Discussion.create(:topic_id=>num,:user_id=>num, :statement=>"statement#{num}", :replyto=>num)
   else
-   Discussion.create(:user_id=>current_user.id, :statement=>"statement#{num}") 
+   Discussion.create(:topic_id=>num,:user_id=>num, :statement=>"statement#{num}") 
+  end
 end
 
 
