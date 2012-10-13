@@ -8,9 +8,9 @@
         =link_to "Discussion Board", discussions_path
       %li.align-right
         =link_to "Sign out", destroy_user_session_path, :method => :delete
-- if flash[:notice]
-  #notice.message= flash[:notice]
-- elsif flash[:warning]
-  #warning.message= flash[:warning]
+  - if flash[:notice]
+    #notice.message= flash[:notice]
+  - elsif flash[:warning]
+    #warning.message= flash[:warning]
   
 

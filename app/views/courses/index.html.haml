@@ -12,6 +12,6 @@
         %td= course.course_num 
         %td= course.name
         %td= link_to "See Topics For #{course.name}", course_topics_path(:id => course.id)
-
+        %td= button_to "Enroll in this class",enroll_path(:id=>course.id), {:class=>"btn btn-info"}
 %div
   = link_to 'Add A New Course', new_course_path

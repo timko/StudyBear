@@ -14,12 +14,14 @@ StudyBear::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+
   root :to => "courses#index"
   resources :courses
 
   match 'topics/:id/problems' => "problems#problems_for_topic", :as => :topic_problems
   match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
   match 'problem/:id/answer/' => "problems#evaluate", :as => :eval_answer, :via => :post
+  match 'courses/:id/enroll/' => "courses#create_enrollment", :as => :enroll
 
   resources :topics, :only => [:new, :create]
   resources :problems, :only => [:new, :create, :edit, :show, :update, :destroy]
