@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20121013111305) do
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "text"
     t.text     "statement"
     t.integer  "topic_id"
     t.text     "answer"

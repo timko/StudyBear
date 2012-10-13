@@ -1,4 +1,14 @@
 StudyBear::Application.routes.draw do
+#get "discussions/create"
+
+#  get "discussions/new"
+
+#  get "discussions/reply"
+
+#  get "discussions/delete"
+
+#  get "discussions/index"
+
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -13,6 +23,7 @@ StudyBear::Application.routes.draw do
 
   resources :topics, :only => [:new, :create]
   resources :problems, :only => [:new, :create, :edit, :show, :update, :destroy]
+  resources :discussions 
 
 
   # Sample of regular route:
