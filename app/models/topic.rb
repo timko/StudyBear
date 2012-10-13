@@ -4,4 +4,5 @@ class Topic < ActiveRecord::Base
   validates :course_id, :presence => true
   belongs_to :course
   has_many :problems
+  has_many :discussions
 end

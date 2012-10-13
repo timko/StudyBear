@@ -21,7 +21,8 @@ StudyBear::Application.routes.draw do
   match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
   resources :topics, :only => [:new, :create]
   resources :problems, :only => [:new, :create, :edit, :show, :update, :destroy]
-  resources :discussions 
+  resources :discussions
+  match 'discussions/reply/:id' => 'discussions#reply', :as => :discussion_reply
 
 
   # Sample of regular route:

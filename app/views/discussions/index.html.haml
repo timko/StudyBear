@@ -8,9 +8,12 @@
     %tr
       %th Discussion 
       %th Text
+      %th
   %tbody
     - @discussions.each do |discussion|
       %tr
         %td= discussion.id
-        %td= discussion.statement
+        %td= discussion.statement 
+        %td= link_to 'Reply', discussion_reply_path(:id=>discussion.id)
+        %td= (discussion.replyto.nil? ) ? '' : (link_to 'Reply To', :id=>discussion.replyto)
 = link_to 'Add A New Discussion', new_discussion_path

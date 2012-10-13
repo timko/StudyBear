@@ -10,3 +10,17 @@
   fake_str = "course#{num}"
   Course.create(:name =>  fake_str, :course_num => fake_str)
 end
+(1..5).each do |num|
+  fake_str = "user#{num}"
+  fake_email="user#{num}@gmail.com"
+  fake_pass="user#{num}pass"
+  User.create( :name => fake_str,:email => fake_email,:password => fake_pass)
+end
+(1..5).each do |num|
+  if num - 1 >= 0
+   Discussion.create(:user_id=>current_user.id, :statement=>"statement#{num}", :replyto=>${num-1})
+  else
+   Discussion.create(:user_id=>current_user.id, :statement=>"statement#{num}") 
+end
+
+
