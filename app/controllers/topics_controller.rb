@@ -36,5 +36,8 @@ class TopicsController < ApplicationController
     Topic.create(:course_id => c_id, :name => params[:topic][:name])
     redirect_to course_topics_path(:id => c_id)
   end
+  def create_discussion
+    Discussion.create
+  end
 
 end
