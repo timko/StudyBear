@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+(1..5).each do |num|
+  fake_str = "course#{num}"
+  Course.create(:name =>  fake_str, :course_num => fake_str)
+end
