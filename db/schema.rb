@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20121013111305) do
     t.datetime "updated_at", :null => false
     t.text     "statement"
     t.integer  "topic_id"
+    t.text     "answer"
   end
 
   create_table "topics", :force => true do |t|

@@ -14,7 +14,8 @@ class ProblemsController < ApplicationController
   def create
     redirect_guest
     t_id = params[:topic_id]
-    Problem.create(:topic_id => t_id, :statement => params[:problem][:statement], :user_id => current_user.id)
+    prob_hash = params[:problem]
+    Problem.create(:topic_id => t_id, :statement => prob_hash[:statement], :user_id => current_user.id, :answer => prob_hash[:answer])
     redirect_to topic_problems_path(:id => t_id)
   end
 
@@ -22,6 +23,13 @@ class ProblemsController < ApplicationController
     redirect_guest
     @topic = Topic.find(params[:id])
     @problems = @topic.problems
+  end
+
+  def evaluate
+    poss_answer = params[:potential][:ans]
+    true_answer = Problem.find(params[:prob_id]).answer
+    flash[:notice] = poss_answer == true_answer ? "Correct!" : "NOT Corect!"
+    redirect_to topic_problems_path(:id => params[:topic_id])
   end
 
 end

@@ -5,6 +5,12 @@
     - @problems.each do |problem|
       %tr
         %td= problem.statement
+        %td 
+          = form_tag(:controller => "problems", :action => "evaluate")do
+            =label :potential, :ans, "Answer"
+            =text_field :potential, 'ans'
+          = submit_tag "Submit"
+
 =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
 
 .row

@@ -9,6 +9,8 @@ StudyBear::Application.routes.draw do
 
   match 'topics/:id/problems' => "problems#problems_for_topic", :as => :topic_problems
   match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
+  match 'problem/:id/answer/' => "problems#evaluate", :as => :eval_answer, :via => :get
+
   resources :topics, :only => [:new, :create]
   resources :problems, :only => [:new, :create, :edit, :show, :update, :destroy]
 

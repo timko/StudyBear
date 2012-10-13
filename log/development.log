@@ -8599,3 +8599,1981 @@ Served asset /jquery.js - 304 Not Modified (8ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:18:44 -0700
 Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/courses/2/topics" for 127.0.0.1 at 2012-10-13 05:25:44 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 2[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.0ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:25:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:25:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:25:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:25:44 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/topics/2/problems" for 127.0.0.1 at 2012-10-13 05:26:42 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mProblem Load (0.1ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 2
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 2 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (4.3ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:26:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:42 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/2/topics" for 127.0.0.1 at 2012-10-13 05:26:46 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 2
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:26:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 05:26:48 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.6ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:26:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:48 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 05:26:51 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.6ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 23ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:26:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:51 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/new?id=5" for 127.0.0.1 at 2012-10-13 05:26:53 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"5"}
+  Rendered topics/new.html.haml within layouts/application (1.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:26:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:53 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:26:53 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started POST "/topics?course_id=5" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "topic"=>{"name"=>""}, "commit"=>"Create", "course_id"=>"5"}
+  [1m[36m (10.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/courses/5/topics
+Completed 302 Found in 13ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.6ms)
+  Rendered home/_signed_in.html.haml (0.9ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:01 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 05:27:03 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:27:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:27:03 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 05:32:30 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.0ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 20ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:32:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:30 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 05:32:32 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (2.8ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 05:32:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:32 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 05:32:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:01:56 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %td and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:         %td= form_tag eval_answer_path(:id => problem.id) do
+    9:             =label :potential, :ans, "Answer"
+    10:             =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:02:23 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %td and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:         %td= form_tag eval_answer_path(:id => problem.id) do
+    9:           =label :potential, :ans, "Answer"
+    10:           =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:02:24 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %td and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:         %td= form_tag eval_answer_path(:id => problem.id) do
+    9:           =label :potential, :ans, "Answer"
+    10:           =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (42.4ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:02:38 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_problems_problems_for_topic_html_haml___735186233__610928068 RAISED /home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: unknown regexp options - tabl
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: syntax error, unexpected $undefined
+...ush_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); ...
+...                               ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n<div class='row'></div>\n#{
+                ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected '<'
+));}\n<div class='row'></div>\n#{
+                        ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: unterminated regexp meets end of file
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_problems_problems_for_topic_html_haml___735186233__610928068(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "problems/problems_for_topic";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("Problems for #{Haml::Helpers.html_escape((@topic.name))}"
+));}</h1>\n<table>\n  <tbody>\n", 2, false);
+
+
+ @problems.each do |problem|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((problem.statement
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((form_tag eval_answer_path(:id => problem.id) do
+));}</td>\n      #{_hamlout.format_script_false_false_false_true_false_true_false((label :potential, :ans, "Answer"
+));}\n      #{_hamlout.format_script_false_false_false_true_false_true_false((text_field :potential, 'ans'
+));}\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false((link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+));}\n<div class='row'></div>\n#{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Go Back', course_topics_path(:id => @topic.course.id)
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__967756612__process_action__797486101__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__801969566__call__325112366__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  Rendered problems/problems_for_topic.html.haml within layouts/application (72.3ms)
+Completed 500 Internal Server Error in 76ms
+
+ActionView::Template::Error (/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: unknown regexp options - tabl
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: syntax error, unexpected $undefined
+...ush_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); ...
+...                               ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+));}\n<div class='row'></div>\n#{
+                ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected '<'
+));}\n<div class='row'></div>\n#{
+                        ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: unterminated regexp meets end of file
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected $end, expecting keyword_end):
+    9:         =label :potential, :ans, "Answer"
+    10:         =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+    13: 
+    14: .row
+    15: = link_to 'Go Back', course_topics_path(:id => @topic.course.id)
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.8) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.8) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.8) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__967756612__process_action__797486101__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__801969566__call__325112366__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:03:19 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (50.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 74ms (Views: 65.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:03:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:03:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:03:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:03:19 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:03:56 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %tr and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:       %tr= form_tag eval_answer_path(:id => problem.id) do
+    9:         =label :potential, :ans, "Answer"
+    10:         =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.1ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:04:28 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (8.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+ERROR: compiling _app_views_problems_problems_for_topic_html_haml___735186233__623199178 RAISED /home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:9: syntax error, unexpected ')'
+));}</tr>\n    #{_hamlout.form...
+ ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: unknown regexp options - tbdy
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: syntax error, unexpected $undefined
+..._hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_...
+...                               ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: unknown regexp options - dv
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected $undefined
+));}\n<div class='row'></div>\n#{
+                              ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: syntax error, unexpected '}', expecting keyword_end
+));}\n", 0, false);::Haml::Util.h...
+    ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: unterminated string meets end of file
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_problems_problems_for_topic_html_haml___735186233__623199178(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "problems/problems_for_topic";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false(("Problems for #{Haml::Helpers.html_escape((@topic.name))}"
+));}</h1>\n<table>\n  <tbody>\n", 2, false);
+
+
+ @problems.each do |problem|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((problem.statement
+));}</td>\n    </tr>\n    <tr>#{_hamlout.format_script_false_true_false_true_false_true_false((form_tag eval_answer_path(:id => problem.id) do
+));}</tr>\n    #{_hamlout.format_script_false_false_false_true_false_true_false((label :potential, :ans, "Answer"
+));}\n    #{_hamlout.format_script_false_false_false_true_false_true_false((text_field :potential, 'ans'
+));}\n", 0, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false((link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+));}\n<div class='row'></div>\n#{
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Go Back', course_topics_path(:id => @topic.course.id)
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__967756612__process_action__797486101__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/usr/local/lib/ruby/gems/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__801969566__call__325112366__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  Rendered problems/problems_for_topic.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:9: syntax error, unexpected ')'
+));}</tr>\n    #{_hamlout.form...
+ ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: unknown regexp options - tbdy
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:12: syntax error, unexpected $undefined
+..._hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_...
+...                               ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: unknown regexp options - dv
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:13: syntax error, unexpected $undefined
+));}\n<div class='row'></div>\n#{
+                              ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: syntax error, unexpected '}', expecting keyword_end
+));}\n", 0, false);::Haml::Util.h...
+    ^
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: unterminated string meets end of file
+/home/ubuntu/gitDump/StudyBear/app/views/problems/problems_for_topic.html.haml:16: syntax error, unexpected $end, expecting keyword_end):
+    6:       %tr
+    7:         %td= problem.statement
+    8:       %tr= form_tag eval_answer_path(:id => problem.id) do
+    9:       =label :potential, :ans, "Answer"
+    10:       =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.8) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.8) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.8) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.8) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.8) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__967756612__process_action__797486101__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  warden (1.2.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__801969566__call__325112366__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.3ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.9ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:04:59 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %tr and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:       %tr = form_tag eval_answer_path(:id => problem.id) do
+    9:             =label :potential, :ans, "Answer"
+    10:             =text_field :potential, 'ans'
+    11: 
+    12: =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.6ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:05:23 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %tr and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:       %tr = form_tag eval_answer_path(:id => problem.id) do
+    9:             .row
+    10:             =label :potential, :ans, "Answer"
+    11:             =text_field :potential, 'ans'
+    12: 
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.7ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:06:13 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered problems/problems_for_topic.html.haml within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %tr and nested within it.):
+    6:       %tr
+    7:         %td= problem.statement
+    8:       %tr = form_tag eval_answer_path(:id => problem.id) do
+    9:           .row
+    10:           =label :potential, :ans, "Answer"
+    11:           =text_field :potential, 'ans'
+    12: 
+  app/views/problems/problems_for_topic.html.haml:9
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (35.2ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:09:14 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (13.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:09:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:14 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:14 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:09:45 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (13.7ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 41ms (Views: 28.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:09:45 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:45 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:45 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:09:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 06:10:19 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (7.0ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:10:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:10:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:10:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:10:19 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 06:20:12 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (3.6ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 89ms (Views: 55.5ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:12 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 06:20:19 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (3.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:19 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/topics/new?id=5" for 127.0.0.1 at 2012-10-13 06:20:24 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"5"}
+  Rendered topics/new.html.haml within layouts/application (5.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:24 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:24 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started POST "/topics?course_id=5" for 127.0.0.1 at 2012-10-13 06:20:36 -0700
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "topic"=>{"name"=>"roar"}, "commit"=>"Create", "course_id"=>"5"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "topics" ("course_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["course_id", 5], ["created_at", Sat, 13 Oct 2012 13:20:36 UTC +00:00], ["name", "roar"], ["updated_at", Sat, 13 Oct 2012 13:20:36 UTC +00:00]]
+  [1m[36m (32.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/courses/5/topics
+Completed 302 Found in 48ms (ActiveRecord: 33.3ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 06:20:36 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.9ms)
+  Rendered home/_signed_in.html.haml (0.2ms)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:36 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:37 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:37 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 06:20:39 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (5.8ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:39 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:39 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=3" for 127.0.0.1 at 2012-10-13 06:20:41 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (8.0ms)
+  Rendered home/_signed_in.html.haml (0.2ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:20:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:41 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:20:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/problems?topic_id=3" for 127.0.0.1 at 2012-10-13 06:20:52 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "problem"=>{"statement"=>"Yes?", "answer"=>"No"}, "commit"=>"Create", "topic_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 6ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: answer):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121013012106)
+Migrating to CreateCourses (20121013012850)
+Migrating to AddDeviseToUsers (20121013021940)
+Migrating to CreateTopics (20121013031807)
+Migrating to AddDetailsToTopics (20121013061904)
+Migrating to CreateDiscussions (20121013095820)
+Migrating to CreateProblems (20121013095935)
+Migrating to AddDetailsToProblems (20121013111305)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("discussions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("problems")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("topics")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to AddDetailsToProblems (20121013111305)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TEMPORARY TABLE "altered_problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "statement" text, "topic_id" integer) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("problems")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "problems"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890', 'If blah blah blah?', 1)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278', 'ld;jgdsjfasdfsadfaf', 1)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764', 'wevegotproblemsgodh;sadjflsajdf;sdjf;safjksfjs;afjsa;fklsdkfs;adfjslakdfjlsakfjs;adfjsadf', 2)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "problems"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "statement" text, "topic_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_problems")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_problems"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890', 'If blah blah blah?', 1)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278', 'ld;jgdsjfasdfsadfaf', 1)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764', 'wevegotproblemsgodh;sadjflsajdf;sdjf;safjksfjs;afjsa;fklsdkfs;adfjslakdfjlsakfjs;adfjsadf', 2)[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "altered_problems"
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "altered_problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "statement" text, "topic_id" integer) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("problems")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "problems"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890', 'If blah blah blah?', 1)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278', 'ld;jgdsjfasdfsadfaf', 1)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement","topic_id") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764', 'wevegotproblemsgodh;sadjflsajdf;sdjf;safjksfjs;afjsa;fklsdkfs;adfjslakdfjlsakfjs;adfjsadf', 2)
+  [1m[36m (1.3ms)[0m  [1mDROP TABLE "problems"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "statement" text) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_problems")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_problems"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at","statement") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890', 'If blah blah blah?')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "problems" ("id","user_id","created_at","updated_at","statement") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278', 'ld;jgdsjfasdfsadfaf')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at","statement") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764', 'wevegotproblemsgodh;sadjflsajdf;sdjf;safjksfjs;afjsa;fklsdkfs;adfjslakdfjlsakfjs;adfjsadf')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "altered_problems"
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "altered_problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "statement" text) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("problems")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "problems"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890', 'If blah blah blah?')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278', 'ld;jgdsjfasdfsadfaf')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_problems" ("id","user_id","created_at","updated_at","statement") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764', 'wevegotproblemsgodh;sadjflsajdf;sdjf;safjksfjs;afjsa;fklsdkfs;adfjslakdfjlsakfjs;adfjsadf')
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "problems"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "problems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_problems")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_problems"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at") VALUES (1, 1, '2012-10-13 12:13:23.720890', '2012-10-13 12:13:23.720890')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "problems" ("id","user_id","created_at","updated_at") VALUES (2, 1, '2012-10-13 12:15:39.448278', '2012-10-13 12:15:39.448278')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "problems" ("id","user_id","created_at","updated_at") VALUES (3, 1, '2012-10-13 12:18:44.460764', '2012-10-13 12:18:44.460764')[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "altered_problems"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121013111305'[0m
+  [1m[35m (28.7ms)[0m  commit transaction
+  [1m[36m (1.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("discussions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("problems")[0m
+  [1m[35m (0.2ms)[0m  PRAGMA index_list("topics")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121013012106)
+Migrating to CreateCourses (20121013012850)
+Migrating to AddDeviseToUsers (20121013021940)
+Migrating to CreateTopics (20121013031807)
+Migrating to AddDetailsToTopics (20121013061904)
+Migrating to CreateDiscussions (20121013095820)
+Migrating to CreateProblems (20121013095935)
+Migrating to AddDetailsToProblems (20121013111305)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "problems" ADD "statement" text
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "problems" ADD "topic_id" integer[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "problems" ADD "answer" text
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121013111305')[0m
+  [1m[35m (67.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("discussions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("problems")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("topics")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 06:22:54 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.6ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 33ms (Views: 8.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:22:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:54 -0700
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:54 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 06:22:58 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (5.9ms)
+  Rendered home/_signed_in.html.haml (4.5ms)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:22:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:59 -0700
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:22:59 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 06:23:00 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (4.5ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:23:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:01 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=3" for 127.0.0.1 at 2012-10-13 06:23:02 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (1.2ms)
+  Rendered home/_signed_in.html.haml (8.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:23:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:02 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:02 -0700
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started POST "/problems?topic_id=3" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "problem"=>{"statement"=>"Yes?", "answer"=>"No"}, "commit"=>"Create", "topic_id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "problems" ("answer", "created_at", "statement", "topic_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer", "No"], ["created_at", Sat, 13 Oct 2012 13:23:07 UTC +00:00], ["statement", "Yes?"], ["topic_id", 3], ["updated_at", Sat, 13 Oct 2012 13:23:07 UTC +00:00], ["user_id", 1]]
+  [1m[35m (29.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics/3/problems
+Completed 302 Found in 40ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mProblem Load (0.4ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (12.3ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:23:07 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 06:30:51 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (16.8ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 76ms (Views: 22.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:30:51 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:30:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:30:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:30:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 06:48:40 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (45.6ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 88ms (Views: 56.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 06:48:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 06:48:40 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 06:48:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 06:48:40 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 07:02:57 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (8.3ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:02:57 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:02:57 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:02:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:02:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 07:03:00 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 16ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:00 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:00 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/2/topics" for 127.0.0.1 at 2012-10-13 07:03:03 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 2
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:03 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:03 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/topics/2/problems" for 127.0.0.1 at 2012-10-13 07:03:05 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 2[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 2 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (8.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 24ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:06 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/2/topics" for 127.0.0.1 at 2012-10-13 07:03:07 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 2[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.9ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:07 -0700
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:07 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 07:03:09 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (7.7ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:09 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:09 -0700
+Served asset /application.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 07:03:10 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (8.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.9ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 28ms (Views: 17.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:10 -0700
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:10 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 07:03:12 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (1.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (3.2ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:12 -0700
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 07:03:14 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (14.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 26ms (Views: 9.9ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:14 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 07:03:16 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (10.8ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:16 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/4/topics" for 127.0.0.1 at 2012-10-13 07:03:17 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 4
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.5ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 07:03:20 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.3ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 28ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:20 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:20 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:20 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 07:03:21 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.9ms)
+  Rendered home/_signed_in.html.haml (0.3ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:22 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/3/problems" for 127.0.0.1 at 2012-10-13 07:03:23 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mProblem Load (0.8ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 3
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 5 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (4.7ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 07:03:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:23 -0700
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 07:03:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
