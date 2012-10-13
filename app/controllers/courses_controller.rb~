@@ -17,7 +17,7 @@ class CoursesController < ApplicationController
 
   def create
     course = Course.create(params[:course])
-    if course.id
+    if course
       flash[:notice] = "Course Successfully added"
     end
     redirect_to courses_path

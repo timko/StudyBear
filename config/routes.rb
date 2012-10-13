@@ -7,6 +7,11 @@ StudyBear::Application.routes.draw do
   root :to => "courses#index"
   resources :courses
 
+  match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
+#  match 'courses/:id/topics/new' => "topics#new", :as => :new_topic, :via => :get
+# match 'courses/:id/topics/' => "topics#create", :as => :create_topic, :via => :post
+  resources :topics, :only => [:new, :create]
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
