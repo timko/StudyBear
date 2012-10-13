@@ -14,4 +14,6 @@
       %tr
         %td= course.course_num 
         %td= course.name
-        %td= link_to "See Topics For #{course.title}", courses_path #this is a placeholder path for now
+        %td= link_to "See Topics For #{course.name}", courses_path #this is a placeholder path for now
+
+= link_to 'Add A New Course'

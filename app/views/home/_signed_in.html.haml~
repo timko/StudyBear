@@ -1,0 +1,10 @@
+%h1.title StudyBear
+#main
+  - if flash[:notice]
+    #notice.message= flash[:notice]
+    elsif flash[:warning]
+    #warning.message= flash[:warning]
+
+#user_nav
+  Signed in as #{current_user.email}. Not you?
+  \#{link_to "Sign out", destroy_user_session_path, :method => :delete}
