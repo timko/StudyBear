@@ -1,0 +1,7 @@
+%h1 Discussions#new
+
+=form_tag discussions_path do
+  =label :discussion, :statement, "Statement"
+  =text_field :discussion, 'statement'
+  .row
+  =submit_tag "Create"
