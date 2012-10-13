@@ -7,5 +7,6 @@
 
   =label :course, :name, "Title"
   =text_field :course, 'name'
-
+  
+  .row
   =submit_tag "Create"

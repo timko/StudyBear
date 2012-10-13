@@ -12663,3 +12663,1956 @@ Migrating to AddReplyToDiscussions (20121013142522)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
   [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:27:16 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (91.7ms)
+Compiled application.css  (0ms)  (pid 6334)
+  Rendered home/_signed_in.html.haml (3.1ms)
+Completed 200 OK in 546ms (Views: 291.7ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:17 -0700
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:27:17 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (24ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:17 -0700
+Served asset /discussions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:17 -0700
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (3.6ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:22 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:27:31 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.8ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:27:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:31 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:27:32 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/new?id=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendered topics/new.html.haml within layouts/application (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:24 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started POST "/topics?course_id=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "topic"=>{"name"=>"topic 2"}, "commit"=>"Create", "course_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (73.8ms)[0m  [1mINSERT INTO "topics" ("course_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["created_at", Sat, 13 Oct 2012 18:30:28 UTC +00:00], ["name", "topic 2"], ["updated_at", Sat, 13 Oct 2012 18:30:28 UTC +00:00]]
+  [1m[35m (36.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/courses/1/topics
+Completed 302 Found in 114ms (ActiveRecord: 110.3ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (12.5ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Served asset /discussions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:30:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (5.5ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (8.9ms)
+  Rendered home/_signed_in.html.haml (0.8ms)
+Completed 200 OK in 33ms (Views: 22.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Served asset /discussions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:04 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (4.3ms)
+  Rendered home/_signed_in.html.haml (4.2ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Served asset /discussions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:31:51 -0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:32:07 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered topics/topics_for_course.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    3: %table
+    4:   %tbody
+    5:     - @topics.each do |topic|
+    6:         = topic.name
+    7:         = link_to 'Try Problems', topic_problems_path(:id => topic.id)
+    8: 
+    9: = link_to 'Create New Topic', new_topic_path(:id => @course.id)
+  app/views/topics/topics_for_course.html.haml:6
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (50.7ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:32:18 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.9ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (4.4ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:32:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:19 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:19 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:19 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (7.9ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 47ms (Views: 36.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.4ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (4.6ms)
+  Rendered home/_signed_in.html.haml (1.3ms)
+Completed 200 OK in 22ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:32:52 -0700
+Served asset /discussions.js - 304 Not Modified (8ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (8.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (11.8ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 33ms (Views: 10.9ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:12 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:33:17 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1
+  Rendered problems/_problem.html.haml (2.2ms)
+  Rendered problems/_problem.html.haml (0.8ms)
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (102.2ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 112ms (Views: 108.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:33:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:18 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:18 -0700
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:18 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.8ms)
+  Rendered home/_signed_in.html.haml (0.8ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:33:26 -0700
+Served asset /discussions.js - 304 Not Modified (5ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mDiscussion Load (0.2ms)[0m  SELECT "discussions".* FROM "discussions" 
+  Rendered discussions/index.html.haml within layouts/application (5.7ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Served asset /discussions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:25 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (14.1ms)
+  Rendered home/_signed_in.html.haml (1.1ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:29 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mDiscussion Load (0.1ms)[0m  SELECT "discussions".* FROM "discussions" 
+  Rendered discussions/index.html.haml within layouts/application (2.8ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:34:31 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.4ms)
+  Rendered home/_signed_in.html.haml (0.9ms)
+Completed 200 OK in 24ms (Views: 14.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (64ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.2ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:35 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1
+  Rendered problems/_problem.html.haml (8.4ms)
+  Rendered problems/_problem.html.haml (0.8ms)
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (13.2ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Served asset /discussions.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:39 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.2ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:42 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/topics/4/problems" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 4[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (10.0ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:45 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/problems/new?id=4" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (3.4ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:37:47 -0700
+Served asset /discussions.js - 304 Not Modified (10ms)
+
+
+Started GET "/problems/new?id=4" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (7.5ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:17 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started POST "/problems?topic_id=4" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "problem"=>{"statement"=>"YesYes?", "answer"=>"NoNo"}, "commit"=>"Create", "topic_id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (11.0ms)[0m  [1mINSERT INTO "problems" ("answer", "created_at", "statement", "topic_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer", "NoNo"], ["created_at", Sat, 13 Oct 2012 18:38:29 UTC +00:00], ["statement", "YesYes?"], ["topic_id", 4], ["updated_at", Sat, 13 Oct 2012 18:38:29 UTC +00:00], ["user_id", 1]]
+  [1m[35m (32.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/topics/4/problems
+Completed 302 Found in 48ms (ActiveRecord: 43.6ms)
+
+
+Started GET "/topics/4/problems" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 4[0m
+  Rendered problems/_problem.html.haml (1.2ms)
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (11.6ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Served asset /discussions.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=4" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (9.2ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Served asset /discussions.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:38:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (7.2ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:39:19 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.8ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:31 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.2ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  Rendered problems/_problem.html.haml (1.2ms)
+  Rendered problems/_problem.html.haml (0.9ms)
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (8.2ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 24ms (Views: 14.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:42:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:42:36 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `button_for' for #<#<Class:0x9ea4260>:0xa992730>):
+    11:   .row
+    12:   =submit_tag "Create"
+    13: 
+    14: = button_for "Cancel", problems_path
+  app/views/problems/new.html.haml:14:in `_app_views_problems_new_html_haml__266009319_88903310'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (14.1ms)
+  Rendered home/_signed_in.html.haml (10.9ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:30 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (42.3ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 63ms (Views: 49.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (2.9ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:43:59 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2012-10-13 11:44:14 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2012-10-13 11:45:06 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.9ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2012-10-13 11:45:18 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[36mUser Load (6.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/problems" for 127.0.0.1 at 2012-10-13 11:49:26 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/problems" for 127.0.0.1 at 2012-10-13 11:52:43 -0700
+Processing by ProblemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/problems_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (4.5ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 32ms (Views: 11.9ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:52:51 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1
+  Rendered topics/topics_for_course.html.haml within layouts/application (8.9ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:52:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:52 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:52 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.2ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  Rendered problems/_problem.html.haml (1.3ms)
+  Rendered problems/_problem.html.haml (0.8ms)
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (17.3ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:52:53 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:52:56 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered problems/new.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionController::RoutingError (No route matches {:controller=>"problems", :action=>"problems_for_topic", :topic_id=>"1"}):
+  app/views/problems/new.html.haml:14:in `_app_views_problems_new_html_haml__266009319_84950330'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.5ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (7.9ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Served asset /discussions.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:43 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.1ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  Rendered problems/_problem.html.haml (10.8ms)
+  Rendered problems/_problem.html.haml (0.6ms)
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (15.6ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.5ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.3ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:53:56 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/new?id=1" for 127.0.0.1 at 2012-10-13 11:55:00 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendered topics/new.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionController::RoutingError (No route matches {:controller=>"topics", :action=>"topics_for_course", :course_id=>"1"}):
+  app/views/topics/new.html.haml:11:in `_app_views_topics_new_html_haml___267893108_90428260'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/topics/new?id=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendered topics/new.html.haml within layouts/application (7.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/_signed_in.html.haml (1.4ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started POST "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.9ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 32ms (Views: 17.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:23 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (1.6ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:26 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2012-10-13 11:55:29 -0700
+Processing by CoursesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered courses/new.html.haml within layouts/application (3.3ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:55:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:30 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:55:30 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.5ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:19 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/3/topics" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 3[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.4ms)
+  Rendered home/_signed_in.html.haml (0.7ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:21 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/topics/new?id=3" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"3"}
+  Rendered topics/new.html.haml within layouts/application (1.4ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:24 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started POST "/courses/3/topics" for 127.0.0.1 at 2012-10-13 11:56:25 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mTopic Load (0.1ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 3[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.4ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 20ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:26 -0700
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:26 -0700
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:26 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Processing by CoursesController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered courses/new.html.haml within layouts/application (12.5ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:29 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Processing by CoursesController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCourse Exists (0.2ms)[0m  SELECT 1 AS one FROM "courses" WHERE "courses"."course_num" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 215ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Processing by CoursesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" [0m
+  Rendered courses/index.html.haml within layouts/application (1.3ms)
+  Rendered home/_signed_in.html.haml (3.4ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/5/topics" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 5
+  Rendered topics/topics_for_course.html.haml within layouts/application (1.6ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.3ms)
+  Rendered home/_signed_in.html.haml (0.4ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2012-10-13 11:56:39 -0700
+Processing by CoursesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered courses/new.html.haml within layouts/application (1.4ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:40 -0700
+Served asset /discussions.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:40 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:40 -0700
+Served asset /application.css - 304 Not Modified (74ms)
+
+
+Started POST "/courses" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Processing by CoursesController#create as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCourse Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "courses" WHERE "courses"."course_num" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" 
+  Rendered courses/index.html.haml within layouts/application (1.7ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:45 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (2.1ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Served asset /discussions.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/new?id=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Processing by TopicsController#new as HTML
+  Parameters: {"id"=>"1"}
+  Rendered topics/new.html.haml within layouts/application (1.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/courses/1/topics" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Processing by TopicsController#topics_for_course as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mTopic Load (0.2ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."course_id" = 1[0m
+  Rendered topics/topics_for_course.html.haml within layouts/application (8.7ms)
+  Rendered home/_signed_in.html.haml (0.6ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mTopic Load (0.0ms)[0m  [1mSELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mProblem Load (0.2ms)[0m  SELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1
+  Rendered problems/_problem.html.haml (1.2ms)
+  Rendered problems/_problem.html.haml (0.9ms)
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1[0m
+  Rendered problems/problems_for_topic.html.haml within layouts/application (14.2ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:57 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/problems/new?id=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Processing by ProblemsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered problems/new.html.haml within layouts/application (4.3ms)
+  Rendered home/_signed_in.html.haml (0.5ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:56:59 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/topics/1/problems" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Processing by ProblemsController#problems_for_topic as HTML
+  Parameters: {"authenticity_token"=>"HYDZcVhA7S8ABrcp2lmbrOwjjZxtOx5mQtSs7dzPqaQ=", "id"=>"1"}
+  [1m[36mUser Load (5.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mTopic Load (0.1ms)[0m  SELECT "topics".* FROM "topics" WHERE "topics"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mProblem Load (0.3ms)[0m  [1mSELECT "problems".* FROM "problems" WHERE "problems"."topic_id" = 1[0m
+  Rendered problems/_problem.html.haml (2.7ms)
+  Rendered problems/_problem.html.haml (0.9ms)
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = 1 LIMIT 1
+  Rendered problems/problems_for_topic.html.haml within layouts/application (8.3ms)
+  Rendered home/_signed_in.html.haml (0.2ms)
+Completed 200 OK in 34ms (Views: 25.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/discussions.js?body=1" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Served asset /discussions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-13 11:57:06 -0700
+Served asset /jquery.js - 304 Not Modified (9ms)

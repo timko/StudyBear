@@ -2,7 +2,7 @@
 
 =form_tag problems_path(:topic_id => @topic_id) do
   
-  =label :problem, :statement, "Description"
+  =label :problem, :statement, "Question"
   =text_field :problem, 'statement'
 
   =label :problem, :answer, "Answer"
@@ -10,3 +10,5 @@
   
   .row
   =submit_tag "Create"
+
+= button_to "Cancel", topic_problems_path(:topic_id => @topic_id)

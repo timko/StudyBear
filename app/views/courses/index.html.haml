@@ -1,8 +1,5 @@
 %h1 Courses
 
-%div#settings{:align => "right"}
-  =link_to 'Settings', courses_path #this is a placeholder path for now
-
 %table#courses
   %thead
     %tr
@@ -14,6 +11,7 @@
       %tr
         %td= course.course_num 
         %td= course.name
-        %td= link_to "See Topics For #{course.name}", course_topics_path(:id => course.id) #this is a placeholder path for now
+        %td= link_to "See Topics For #{course.name}", course_topics_path(:id => course.id)
 
-= link_to 'Add A New Course', new_course_path
+%div
+  = link_to 'Add A New Course', new_course_path

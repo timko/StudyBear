@@ -4,7 +4,7 @@
   = render 'problems/problem', :prob => problem
 
 .row
-=link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+  =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
 
 .row
-= link_to 'Go Back', course_topics_path(:id => @topic.course.id)
+  = link_to 'Go Back', course_topics_path(:id => @topic.course.id)
