@@ -22,5 +22,8 @@ class CoursesController < ApplicationController
     end
     redirect_to courses_path
   end
+  def create_discussion
+    Discussion.create(:topic_id=>params[:id],:user_id=>current_user,:statement=>"default",:replyTo=>params[:discussion])
+  end
 
 end

@@ -5,4 +5,6 @@
   =text_field :discussion, 'statement'
   - if not params[:parent].nil?
     =hidden_field :discussion, 'parent', :value=>params[:parent] 
+  - if not params[:tid].nil?
+    =hidden_field :discussion, 'tid', :value=>params[:tid] 
   =submit_tag "Create"

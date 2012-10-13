@@ -8,7 +8,7 @@ class DiscussionsController < ApplicationController
   def create
     redirect_guest
 #ok=params[:id]
-    @discussion = Discussion.create(:user_id=>current_user.id, :statement=>params[:discussion][:statement], :replyto=>params[:discussion][:parent]) 
+    @discussion = Discussion.create(:topic_id=>params[:discussion][:tid],:user_id=>current_user.id, :statement=>params[:discussion][:statement], :replyto=>params[:discussion][:parent]) 
     if @discussion.id
       flash[:notice]="Discussion created"
     end
@@ -24,6 +24,7 @@ class DiscussionsController < ApplicationController
   end
 
   def delete
+    Discussion.find(:id).delete
   end
 
   def index
