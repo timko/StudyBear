@@ -7,7 +7,8 @@ class DiscussionsController < ApplicationController
 
   def create
     redirect_guest
-    @discussion = Discussion.create(:user_id=>current_user.id, :statement=>params[:discussion][:statement]) 
+#ok=params[:id]
+    @discussion = Discussion.create(:user_id=>current_user.id, :statement=>params[:discussion][:statement], :replyto=>params[:discussion][:parent]) 
     if @discussion.id
       flash[:notice]="Discussion created"
     end
@@ -18,6 +19,8 @@ class DiscussionsController < ApplicationController
   end
 
   def reply
+    #redirect_guest
+    redirect_to new_discussion_path(:parent=>params[:id])
   end
 
   def delete
@@ -29,4 +32,10 @@ class DiscussionsController < ApplicationController
   end
   def get_user()
   end
+  def discussions_for_topic
+    redirect_guest
+    @topic = Topic.find(params[:id])
+    @problems = @topic.discussions
+  end
+
 end

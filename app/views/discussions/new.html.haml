@@ -3,5 +3,6 @@
 =form_tag discussions_path do
   =label :discussion, :statement, "Statement"
   =text_field :discussion, 'statement'
-  .row
+  - if not params[:parent].nil?
+    =hidden_field :discussion, 'parent', :value=>params[:parent] 
   =submit_tag "Create"
