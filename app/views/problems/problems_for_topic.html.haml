@@ -1,21 +1,10 @@
 %h1 Problems for #{@topic.name}
 
-%table
-  %tbody
-    - @problems.each do |problem|
-      %tr
-        .row
-        %td= problem.statement
-        %td 
-          = form_tag eval_answer_path(:id => @topic.id, :prob_id => problem.id) do
-            = hidden_field_tag "question"
-            = hidden_field_tag "answer"
-
-            =label :potential, :ans, "Answer"
-            =text_field :potential, 'ans'
-            = submit_tag "Submit"
-
-=link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+- @problems.each do |problem|
+  = render 'problems/problem', :prob => problem
 
 .row
-= link_to 'Go Back', course_topics_path(:id => @topic.course.id)
+  =link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+
+.row
+  = link_to 'Go Back', course_topics_path(:id => @topic.course.id)

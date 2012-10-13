@@ -12638,3 +12638,28 @@ Binary data inserted for `string` type on column `encrypted_password`
   [1m[35m (17.1ms)[0m  commit transaction
 Connecting to database specified by database.yml
 >>>>>>> discussion_fix
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121013012106)
+Migrating to CreateCourses (20121013012850)
+Migrating to AddDeviseToUsers (20121013021940)
+Migrating to CreateTopics (20121013031807)
+Migrating to AddDetailsToTopics (20121013061904)
+Migrating to CreateDiscussions (20121013095820)
+Migrating to CreateProblems (20121013095935)
+Migrating to AddDetailsToProblems (20121013111305)
+Migrating to AddReplyToDiscussions (20121013142522)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  ALTER TABLE "discussions" ADD "replyto" integer
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121013142522')[0m
+  [1m[35m (41.1ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("discussions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("problems")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("topics")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m

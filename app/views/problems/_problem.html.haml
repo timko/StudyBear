@@ -1,0 +1,10 @@
+= prob.statement
+.row 
+  = form_tag eval_answer_path(:id => @topic.id, :prob_id => prob.id) do
+    = hidden_field_tag "question"
+    = hidden_field_tag "answer"
+
+    =label :potential, :ans, "Answer"
+    =text_field :potential, 'ans'
+    = submit_tag "Submit"
+

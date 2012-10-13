@@ -29,7 +29,7 @@ class ProblemsController < ApplicationController
     poss_answer = params[:potential][:ans]
     true_answer = Problem.find(params[:prob_id]).answer
     flash[:notice] = poss_answer == true_answer ? "Correct!" : "NOT Corect!"
-    redirect_to topic_problems_path(:id => params[:topic_id])
+    redirect_to topic_problems_path(:id => params[:id])
   end
 
 end

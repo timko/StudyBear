@@ -1,0 +1,19 @@
+%h1  Discussions
+
+%div#settings{:align => "right"}
+  =link_to 'Settings', discussions_path #this is a placeholder path for now
+
+%table#discussions
+  %thead
+    %tr
+      %th Discussion 
+      %th Text
+      %th
+  %tbody
+    - @discussions.each do |discussion|
+      %tr
+        %td= discussion.id
+        %td= discussion.statement 
+        %td= link_to 'Reply', discussion_reply_path(:id=>discussion.id)
+        %td= (discussion.replyto.nil? ) ? '' : (link_to 'Reply To', :id=>discussion.replyto)
+= link_to 'Add A New Discussion', new_discussion_path
