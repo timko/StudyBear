@@ -1,0 +1,9 @@
+%h1 Create A New Problem
+
+=form_tag problems_path(:topic_id => @topic_id) do
+  
+  =label :problem, :statement, "Description"
+  =text_field :problem, 'statement'
+  
+  .row
+  =submit_tag "Create"

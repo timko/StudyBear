@@ -5,7 +5,7 @@
     - @topics.each do |topic|
       %tr
         %td= topic.name
-        %td= link_to 'Try Problems', topic_problems_path(:id => topic.id) #just a placeholder path
+        %td= link_to 'Try Problems', topic_problems_path(:id => topic.id)
 
 = link_to 'Create New Topic', new_topic_path(:id => @course.id)
 .row

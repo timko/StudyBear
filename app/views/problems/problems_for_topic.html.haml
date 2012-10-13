@@ -1,0 +1,11 @@
+%h1 Problems for #{@topic.name}
+
+%table
+  %tbody
+    - @problems.each do |problem|
+      %tr
+        %td= problem.statement
+=link_to 'Create New Problem', new_problem_path(:id => @topic.id)
+
+.row
+= link_to 'Go Back', course_topics_path(:id => @topic.course.id)
