@@ -1,6 +1,16 @@
 StudyBear::Application.routes.draw do
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
+
+  root :to => "courses#index"
+  resources :courses
+
+  match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
+  match 'courses/:id/topics/new' => "topics#new", :as => :new_topic, :via => :get
+  match 'courses/:id/topics/' => "topics#create", :as => :create_topic, :via => :post
+  resources :topics, :only => [:new, :create]
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

@@ -1,0 +1,9 @@
+%h1 Create A New Topic
+
+=form_tag topics_path(:course_id => @course_id) do
+  
+  =label :topic, :name, "Name"
+  =text_field :topic, 'name'
+  
+  .row
+  =submit_tag "Create"
