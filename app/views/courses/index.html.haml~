@@ -1,8 +1,6 @@
 %h1 Courses
 
-%div#settings{:align => "right"}
-
-%table#courses
+%table#courses.table.table-striped
   %thead
     %tr
       %th Course Number

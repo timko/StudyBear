@@ -2,15 +2,17 @@
 %html
   %head
     %title StudyBear
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag "bootstrap", :media => "all"   
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    
 
     - if user_signed_in?
       = render :partial => "home/signed_in"
     
     - else
       = render :partial => "home/login"
-
-  = yield
+    .container
+      .span10
+      = yield

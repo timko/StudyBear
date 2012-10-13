@@ -1,11 +1,16 @@
-%h1.title StudyBear
-#main
-  - if flash[:notice]
-    #notice.message= flash[:notice]
-  - elsif flash[:warning]
-    #warning.message= flash[:warning]
-=link_to "Home", root_path
-=link_to "Discussion Board", discussions_path
-#user_nav
-  Signed in as #{current_user.email}. Not you?
-  \#{link_to "Sign out", destroy_user_session_path, :method => :delete}
+.navbar
+  .navbar-inner
+    %a.brand Study Bear
+    %ul.nav 
+      %li 
+        =link_to "Home", root_path
+      %li 
+        =link_to "Discussion Board", discussions_path
+      %li.align-right
+        =link_to "Sign out", destroy_user_session_path, :method => :delete
+- if flash[:notice]
+  #notice.message= flash[:notice]
+- elsif flash[:warning]
+  #warning.message= flash[:warning]
+  
+

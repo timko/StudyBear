@@ -4,8 +4,8 @@
   %tbody
     - @topics.each do |topic|
       %tr
-        = topic.name
-        = link_to 'Try Problems', topic_problems_path(:id => topic.id)
+        %td= topic.name
+        %td= link_to 'Try Problems', topic_problems_path(:id => topic.id)
 
 = link_to 'Create New Topic', new_topic_path(:id => @course.id)
 .row

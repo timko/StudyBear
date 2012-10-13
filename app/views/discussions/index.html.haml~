@@ -3,7 +3,7 @@
 %div#settings{:align => "right"}
   =link_to 'Settings', discussions_path #this is a placeholder path for now
 
-%table#discussions
+%table#discussions.table.table-striped
   %thead
     %tr
       %th Discussion 
