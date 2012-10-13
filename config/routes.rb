@@ -7,10 +7,11 @@ StudyBear::Application.routes.draw do
   root :to => "courses#index"
   resources :courses
 
+  match 'topics/:id/problems' => "problems#problems_for_topic", :as => :topic_problems
   match 'courses/:id/topics/' => "topics#topics_for_course", :as => :course_topics
-#  match 'courses/:id/topics/new' => "topics#new", :as => :new_topic, :via => :get
-# match 'courses/:id/topics/' => "topics#create", :as => :create_topic, :via => :post
   resources :topics, :only => [:new, :create]
+  resources :problems, :only => [:new, :create, :edit, :show, :update, :destroy]
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
